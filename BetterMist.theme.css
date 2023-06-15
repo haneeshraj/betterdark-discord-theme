@@ -1,0 +1,155 @@
+/**
+ * @name Mist Theme
+ * @author Haneesh Raj
+ * @description It's just a dark theme with some epic animations
+ * @version 0.0.1
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  --mist-background-primary: #151515;
+  --mist-background-secondary: #1a1a1a;
+  --mist-background-tertiary: #1d1d1d;
+  --mist-background-quaternary: #202020;
+}
+
+/* !Home */
+
+/* ?Sidebar */
+
+.sidebar-1tnWFu {
+  width: 16.5rem;
+}
+
+/* *Search */
+
+.searchBar-3TnChZ {
+  padding: 0;
+  height: 4rem;
+}
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  height: 100%;
+  border-radius: 0;
+  padding: 1rem;
+  transition: color 200ms, padding-left 200ms;
+}
+
+.searchBar-3TnChZ:hover .searchBarComponent-3N7dCG {
+  color: #fff;
+  padding-left: 1.5rem;
+}
+
+.privateChannelsHeaderContainer-1UWASm {
+  transition: 200ms;
+  margin-bottom: 0.8rem;
+}
+
+.headerText-1qIDDT {
+  order: -1;
+}
+
+/* *Friend List Item */
+
+.channel-1Shao0 {
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.container-32HW5s {
+  padding: 0;
+  border-radius: 0;
+  position: relative;
+}
+
+.interactive-iyXY_x {
+  padding-block: 0.4rem;
+  padding-left: 1rem;
+}
+
+.interactive-26HRN_,
+.avatar-1HDIsL {
+  transition: all 200ms;
+}
+
+.interactive-26HRN_:focus-within,
+.interactive-26HRN_:hover,
+.interactive-26HRN_:active,
+.interactiveSelected-29CP8y {
+  background: linear-gradient(90deg, rgba(94, 94, 94, 0.3) 0%, transparent 85%);
+}
+
+.interactive-26HRN_:focus-within .avatar-1HDIsL,
+.interactive-26HRN_:hover .avatar-1HDIsL {
+  margin-right: 1.25rem;
+  transform: scale(1.1);
+}
+
+/* *User Area */
+
+.container-YkUktl {
+  height: 5rem;
+  padding: 0 0.75rem;
+  justify-content: space-between;
+}
+.button-12Fmur.enabled-9OeuTA {
+  border-radius: 50%;
+}
+.button-12Fmur.enabled-9OeuTA:not(:last-child) {
+  margin-right: 6px;
+}
+
+/* ?Friend List */
+
+/* *Top bar */
+
+.container-ZMc96U {
+  height: 4rem;
+}
+
+.tabBar-ra-EuL .item-3mHhwr {
+  padding: 0.5rem 1rem;
+}
+
+.topPill-2vcLsa .item-2GWPIy {
+  transition: all 200ms;
+}
+
+/* *Search bar */
+
+.inner-2pOSmK {
+  justify-content: space-between;
+}
+
+.searchBar-2aylmZ {
+  margin: 0;
+  border-radius: 0;
+  padding-inline: 2rem;
+}
+
+.medium-2NClDM .input-2m5SfJ {
+  padding: 2rem 1rem;
+}
+
+.input-2m5SfJ {
+  flex: 1 1 auto;
+}
+
+/* !Chat */
+
+/* ?Send Message block */
+
+.form-3gdLxP {
+  margin: 0;
+  padding: 0;
+}
+
+.channelTextArea-1FufC0 {
+  margin: 0;
+}
+
+.scrollableContainer-15eg7h {
+  padding: 1rem;
+  border-radius: 0;
+}
