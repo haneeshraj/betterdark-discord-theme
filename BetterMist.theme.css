@@ -331,6 +331,10 @@
   min-width: 19rem;
 }
 
+.members-3WRCEx {
+  width: 275px !important;
+}
+
 .members-3WRCEx::-webkit-scrollbar {
   display: none;
 }
