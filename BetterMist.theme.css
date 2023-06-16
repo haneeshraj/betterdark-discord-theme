@@ -8,10 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 :root {
-  --mist-background-primary: #151515;
-  --mist-background-secondary: #1a1a1a;
-  --mist-background-tertiary: #1d1d1d;
-  --mist-background-quaternary: #202020;
+  --mist-accent-color: rgb(81, 112, 226);
+  --candy-color: rgb(134, 81, 226);
 }
 
 /* !Home */
@@ -24,6 +22,23 @@
 
 /* *Server bar */
 
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n:hover .childWrapper-1j_1ub {
+  background-color: var(--mist-accent-color);
+}
+
+.wrapper-3kah-n:hover .homeIcon-r0w4ny {
+  animation: spin 900ms cubic-bezier(0.61, -0.34, 0.17, 1.22);
+}
 /* *Search */
 
 .searchBar-3TnChZ {
@@ -384,9 +399,7 @@
   animation: custom-menu-animation 300ms cubic-bezier(0.62, 0, 0.15, 1);
   transform-origin: top;
 }
-
-/* .TEST */
-
+/* * Mic, headphones settings animation * */
 .panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
@@ -401,3 +414,34 @@
 .container-YkUktl {
   justify-content: space-between;
 }
+
+/* !TAGS */
+.contents-2MsGLg
+  > .avatar-2e8lTP[src*="446890783748915210"]
+  ~ h3
+  .username-h_Y3Us::after {
+  content: "Dev";
+  padding: 0.1rem 0.5rem;
+  background-color: var(--mist-accent-color);
+  display: inline-block;
+  transform: scale(0.7);
+  font-weight: 800;
+  margin-left: 0.1rem;
+  border-radius: 3px;
+}
+
+.contents-2MsGLg
+  > .avatar-2e8lTP[src*="318429104305209344"]
+  ~ h3
+  .username-h_Y3Us::after {
+  content: "Gay retard";
+  padding: 0.1rem 0.5rem;
+  background-color: var(--candy-color);
+  display: inline-block;
+  transform: scale(0.7);
+  font-weight: 800;
+  margin-left: -0.3rem;
+  border-radius: 3px;
+}
+
+/* .TEST */
