@@ -11,9 +11,13 @@
   --mist-accent-color: rgb(81, 112, 226);
   --candy-color: rgb(169, 88, 189);
   --sneha-color: rgb(125, 76, 208);
-  --mist-background-primary: #373737;
-  --mist-background-secondary: #242424;
-  --mist-background-tertiary: #0e0e0e;
+  --mist-background-primary: #1f1f1f;
+  --mist-background-primary-alt: #2c2c2c;
+  --mist-background-secondary: #1a1a1a;
+  --mist-background-tertiary: #141414;
+  --mist-background-quaternary: #0e0e0e;
+  --mist-list-item-hover: rgba(94, 94, 94, 0.3);
+  --mist-highlight: rgba(16, 38, 116, 0.104);
 }
 
 /* !Home */
@@ -22,6 +26,11 @@
 
 .sidebar-1tnWFu {
   width: 17rem;
+  background: var(--mist-background-secondary);
+}
+
+.privateChannels-oVe7HL {
+  background: var(--mist-background-secondary);
 }
 
 /* *Server bar */
@@ -44,6 +53,14 @@
   animation: spin 900ms cubic-bezier(0.61, -0.34, 0.17, 1.22);
 }
 /* *Search */
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  background-color: var(--mist-background-tertiary);
+}
+
+.theme-dark .scroller-WSmht3 {
+  background-color: var(--mist-background-secondary);
+}
 
 .searchBar-3TnChZ {
   padding: 0;
@@ -98,7 +115,11 @@
 .interactive-26HRN_:hover,
 .interactive-26HRN_:active,
 .interactiveSelected-29CP8y {
-  background: linear-gradient(90deg, rgba(94, 94, 94, 0.3) 0%, transparent 85%);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 94, 94, 0.3) 0%,
+    transparent 100%
+  );
 }
 
 .avatar-1HDIsL {
@@ -118,6 +139,9 @@
   padding: 0 0.75rem;
   justify-content: space-between;
 }
+.theme-dark .container-YkUktl {
+  background: var(--mist-background-quaternary);
+}
 .button-12Fmur.enabled-9OeuTA {
   border-radius: 50%;
 }
@@ -127,7 +151,19 @@
 
 /* ?Friend List */
 
+.container-2cd8Mz {
+  background: var(--mist-background-primary);
+}
+
 /* *Top bar */
+
+.theme-dark .themed-Hp1KC_ {
+  background-color: var(--mist-background-tertiary);
+}
+
+.theme-dark .children-3xh0VB:after {
+  background: none;
+}
 
 .container-ZMc96U {
   height: 4.05rem;
@@ -174,6 +210,7 @@
   margin-top: 2rem;
   border-radius: 6px;
   padding-inline: 2rem;
+  background-color: var(--mist-background-tertiary);
 }
 
 .medium-2NClDM .input-2m5SfJ {
@@ -198,6 +235,9 @@
   border-radius: 0;
 }
 
+.actionButton-3-B2x- {
+  background-color: var(--mist-background-secondary);
+}
 .text-3j8t_e,
 .userInfo-2WpsYG {
   overflow: visible;
@@ -252,13 +292,23 @@
 }
 /* *Active Now Right Bar */
 
+.nowPlayingColumn-1eCBCN {
+  background: var(--mist-background-secondary);
+}
+.container-1oAagU {
+  background: var(--mist-background-secondary);
+  /* background: var(--background-secondary); */
+}
+
 .header-Imy05m {
   text-align: center;
 }
 .scroller-hE2gWq {
   margin-left: 0;
-  /* border: none; */
+  border: none;
   padding-right: 1rem !important;
+
+  /* background: var--background-secondary); */
 }
 
 .scroller-hE2gWq::-webkit-scrollbar {
@@ -270,6 +320,12 @@
   padding: 1.5rem;
   margin-top: 1rem;
   transition: transform 300ms cubic-bezier(0.38, 0.12, 0.17, 1.5);
+  background-color: var(--mist-background-tertiary);
+}
+
+.theme-dark .outer-2JOHae.active-1W_Gl9,
+.theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+  background-color: var(--mist-background-quaternary);
 }
 
 .wrapper-2RrXDg {
@@ -293,6 +349,7 @@
 
 .section-3G9aLW:only-child {
   border-radius: 4px;
+  background-color: var(--mist-background-secondary);
 }
 
 .section-3G9aLW {
@@ -327,12 +384,17 @@
 
 /* ?Server Member list */
 
+.container-2o3qEW {
+  background: var(--mist-background-secondary);
+}
+
 .membersWrap-3NUR2t {
   min-width: 19rem;
 }
 
 .members-3WRCEx {
   width: 275px !important;
+  background: var(--mist-background-secondary);
 }
 
 .members-3WRCEx::-webkit-scrollbar {
@@ -341,6 +403,10 @@
 
 .member-2gU6Ar {
   max-width: 100%;
+}
+.member-48YF_l,
+.members-3WRCEx {
+  background: var(--mist-background-secondary);
 }
 
 .membersGroup-2eiWxl {
@@ -376,11 +442,13 @@
 }
 
 /* ?Server Channel list */
-
 .wrapper-NhbLHG {
   padding: 0;
 }
 
+.theme-dark .container-1NXEtd {
+  background-color: var(--mist-background-secondary);
+}
 .content-1gYQeQ {
   margin: 0;
   border: 0;
@@ -391,7 +459,11 @@
 .modeSelected-3DmyhH .content-1gYQeQ,
 .modeSelected-3DmyhH:hover .content-1gYQeQ,
 .wrapper-NhbLHG:hover .content-1gYQeQ {
-  background: linear-gradient(90deg, rgba(94, 94, 94, 0.3) 0%, transparent 85%);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 94, 94, 0.3) 0%,
+    transparent 100%
+  );
 }
 
 .wrapper-NhbLHG .name-28HaxV {
@@ -442,6 +514,17 @@
   transform: scale(0.96);
 }
 
+.managedReactiveScroller-1LjJZ5::-webkit-scrollbar {
+  background-color: var(--mist-background-primary);
+}
+.managedReactiveScroller-1LjJZ5::-webkit-scrollbar-track {
+  background-color: var(--mist-background-primary);
+}
+
+.managedReactiveScroller-1LjJZ5::-webkit-scrollbar-thumb {
+  background-color: var(--mist-background-tertiary);
+}
+
 /* ?Chat Messages */
 
 :root {
@@ -452,9 +535,9 @@
   --accent-hsl: var(--accent-hue),
     calc(var(--accent-saturation) * var(--saturation-factor)),
     var(--accent-lightness);
-  --message-color: var(--background-secondary); /* Message Background */
+  --message-color: var(--mist-background-secondary); /* Message Background */
   --message-color-hover: var(
-    --background-tertiary
+    --mist-background-primary-alt
   ); /* Message Hover Background */
   --default-animation: cubic-bezier(0.4, 0, 0.2, 1);
   --default-time: 250ms;
@@ -825,13 +908,14 @@
 
 .wrapper-30-Nkg.mentioned-Tre-dv .messageContent-2t3eCI {
   position: relative;
-  background-color: hsla(var(--accent-hsl), 0.15);
+  padding: 0.25rem 1rem;
+  background-color: rgba(255, 255, 0, 0.1);
   border-radius: var(--card-radius);
   transition: var(--default-time) var(--default-animation) background-color;
 }
 
 .wrapper-30-Nkg.mentioned-Tre-dv .messageContent-2t3eCI:hover {
-  background-color: hsla(var(--accent-hsl), 0.3);
+  /* background-color: hsla(var(--mist-highlight), 1); */
 }
 
 .wrapper-30-Nkg.mentioned-Tre-dv .messageContent-2t3eCI a {
@@ -1064,6 +1148,13 @@
   padding: 1rem 0.75rem;
 }
 
+/* ?Messages DM */
+
+.messagesWrapper-RpOMA3,
+.scrollerContent-2SW0kQ {
+  background-color: var(--mist-background-primary);
+}
+
 /* ?Send Message block */
 
 .form-3gdLxP {
@@ -1076,8 +1167,9 @@
 }
 
 .scrollableContainer-15eg7h {
-  padding: 1rem;
+  padding: 1.16rem;
   border-radius: 0;
+  background-color: var(--mist-background-primary-alt);
 }
 .placeholder-1rCBhr,
 .editor-H2NA06 {
@@ -1099,14 +1191,14 @@
 
 /* ?User Settings */
 
-.scrollableContainer-15eg7h {
-  border-radius: 6px;
-}
-
 /* *Side bar */
 
 .sidebar-nqHbhN {
   width: 18.75rem;
+}
+
+.wrapper-1_HaEi {
+  background-color: var(--mist-background-primary);
 }
 
 /* *Setting List Item */
