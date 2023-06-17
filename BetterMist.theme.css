@@ -111,6 +111,29 @@
   transition: all 200ms;
 }
 
+.interactiveSelected-29CP8y::before,
+.interactive-iyXY_x::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+  transition: all 200ms;
+}
+
+.interactiveSelected-29CP8y::before {
+  width: 3px !important;
+}
+
+.interactive-iyXY_x::before {
+  width: 0;
+}
+
+.interactive-iyXY_x:hover::before {
+  width: 3px;
+}
+
 .interactive-26HRN_:focus-within,
 .interactive-26HRN_:hover,
 .interactive-26HRN_:active,
@@ -402,7 +425,8 @@
 }
 
 .member-2gU6Ar {
-  max-width: 100%;
+  max-width: 90%;
+  margin-left: 1rem;
 }
 .member-48YF_l,
 .members-3WRCEx {
@@ -1153,6 +1177,10 @@
 .messagesWrapper-RpOMA3,
 .scrollerContent-2SW0kQ {
   background-color: var(--mist-background-primary);
+}
+
+.colorable-3rVGna.primaryDark-2UJt1G {
+  background: var(--mist-background-primary-alt);
 }
 
 /* ?Send Message block */
