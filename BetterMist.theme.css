@@ -9,6 +9,9 @@
 
 :root {
   --mist-accent-color: rgb(81, 112, 226);
+  --mist-accent-color-hover: rgb(53, 91, 225);
+  --mist-accent-red: rgb(226, 81, 81);
+  --mist-accent-red-hover: rgb(221, 48, 48);
   --candy-color: rgb(169, 88, 189);
   --sneha-color: rgb(125, 76, 208);
   --mist-background-primary: #1f1f1f;
@@ -576,6 +579,13 @@
     0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
+/* *Chat Loading */
+.wrapper-3HVHpV {
+  background: var(--mist-background-primary);
+}
+.cozy-3hKWhq.wrapper-15CKyy {
+  background: var(--mist-background-primary);
+}
 /*
   *
   *	MESSAGES
@@ -1229,6 +1239,14 @@
   background-color: var(--mist-background-primary);
 }
 
+.sidebarRegionScroller-FXiQOh {
+  background-color: var(--mist-background-secondary);
+}
+
+.contentRegionScroller-2_GT_N {
+  background-color: var(--mist-background-primary);
+}
+
 /* *Setting List Item */
 
 .side-1lrxIh .item-2GWPIy {
@@ -1238,6 +1256,71 @@
 
 .side-1lrxIh .item-2GWPIy:hover {
   padding-left: 1.5rem;
+}
+
+/* !COMPONENTS */
+
+/* ?Buttons */
+
+.button-ejjZWC {
+  padding: 1.4rem 1rem;
+}
+
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+  background-color: var(--mist-accent-color);
+}
+
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
+  background-color: var(--mist-accent-color-hover);
+}
+
+.lookFilled-1H2Jvj.colorRed-2VFhM4 {
+  background-color: var(--mist-accent-red);
+}
+
+.lookFilled-1H2Jvj.colorRed-2VFhM4:hover {
+  background-color: var(--mist-accent-red-hover);
+}
+
+/* ?D+ card */
+
+.bd-addon-list .bd-addon-header {
+  background-color: var(--mist-background-primary-alt);
+  padding-block: 1.5rem;
+}
+
+.bd-addon-list .bd-footer {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bd-button {
+  background-color: var(--mist-background-secondary);
+  padding: 0.5rem !important;
+  border-radius: 50% !important;
+}
+
+.bd-button:hover {
+  background-color: var(--mist-accent-color);
+}
+
+.bd-links {
+  gap: 1rem;
+}
+
+.bd-button-danger {
+  background-color: var(--mist-background-secondary) !important;
+}
+.bd-button.bd-button-danger:hover {
+  background-color: var(--mist-accent-red) !important;
+}
+
+.bd-addon-list .bd-addon-card {
+  background: var(--mist-background-secondary);
+}
+
+.bd-description-wrap {
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 /* !Extras */
