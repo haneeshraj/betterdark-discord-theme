@@ -109,6 +109,11 @@
   padding-left: 1rem;
 }
 
+.name-2m3Cms {
+  display: flex;
+  align-items: center;
+}
+
 .interactive-26HRN_,
 .avatar-1HDIsL {
   transition: all 200ms;
@@ -1323,6 +1328,12 @@
   padding: 2rem 2rem 1rem 2rem;
 }
 
+/* ?View */
+
+.bd-addon-views .bd-view-button.selected {
+  background-color: var(--mist-accent-color);
+}
+
 /* !Extras */
 
 @keyframes custom-menu-animation {
@@ -1464,7 +1475,10 @@
 .contents-2MsGLg
   > .avatar-2e8lTP[src*="446890783748915210"]
   ~ h3
-  .username-h_Y3Us::after {
+  .username-h_Y3Us::after,
+.titleWrapper-24Kyzc > .title-17SveM > div[aria-label="mist#3554"]::after,
+.link-39sEB3[data-list-item-id="private-channels-uid_23___558942047839453184"]
+  .name-2m3Cms::after {
   content: "Dev";
   padding: 0.1rem 0.5rem;
   background-color: var(--mist-accent-color);
@@ -1479,7 +1493,10 @@
 .contents-2MsGLg
   > .avatar-2e8lTP[src*="318429104305209344"]
   ~ h3
-  .username-h_Y3Us::after {
+  .username-h_Y3Us::after,
+.titleWrapper-24Kyzc > .title-17SveM > div[aria-label="theformante"]::after,
+.link-39sEB3[data-list-item-id="private-channels-uid_23___734110552938512506"]
+  .name-2m3Cms::after {
   content: "Badass";
   padding: 0.1rem 0.5rem;
   background-color: var(--candy-color);
