@@ -17,6 +17,7 @@
   --mist-background-primary: #1f1f1f;
   --mist-background-primary-alt: #2c2c2c;
   --mist-background-secondary: #1a1a1a;
+  --mist-background-secondary-alt: #1d1d1d;
   --mist-background-tertiary: #141414;
   --mist-background-quaternary: #0e0e0e;
   --mist-list-item-hover: rgba(94, 94, 94, 0.3);
@@ -275,8 +276,13 @@
 }
 
 .actionButton-3-B2x- {
-  background-color: var(--mist-background-secondary);
+  background-color: var(--mist-background-primary);
 }
+
+.actionButton-3-B2x-.highlight-3DSi7b {
+  background-color: var(--mist-background-primary) !important;
+}
+
 .text-3j8t_e,
 .userInfo-2WpsYG {
   overflow: visible;
@@ -332,10 +338,10 @@
 /* *Active Now Right Bar */
 
 .nowPlayingColumn-1eCBCN {
-  background: var(--mist-background-secondary);
+  background: var(--mist-background-primary-alt);
 }
 .container-1oAagU {
-  background: var(--mist-background-secondary);
+  background: var(--mist-background-secondary-alt);
   /* background: var(--background-secondary); */
 }
 
@@ -359,12 +365,12 @@
   padding: 1.5rem;
   margin-top: 1rem;
   transition: transform 300ms cubic-bezier(0.38, 0.12, 0.17, 1.5);
-  background-color: var(--mist-background-tertiary);
+  background-color: var(--mist-background-secondary);
 }
 
 .theme-dark .outer-2JOHae.active-1W_Gl9,
 .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
-  background-color: var(--mist-background-quaternary);
+  background-color: var(--mist-background-tertiary);
 }
 
 .wrapper-2RrXDg {
@@ -388,7 +394,7 @@
 
 .section-3G9aLW:only-child {
   border-radius: 4px;
-  background-color: var(--mist-background-secondary);
+  background-color: var(--mist-background-primary-alt);
 }
 
 .section-3G9aLW {
@@ -575,9 +581,9 @@
   --accent-hsl: var(--accent-hue),
     calc(var(--accent-saturation) * var(--saturation-factor)),
     var(--accent-lightness);
-  --message-color: var(--mist-background-secondary); /* Message Background */
+  --message-color: var(--mist-background-primary); /* Message Background */
   --message-color-hover: var(
-    --mist-background-primary-alt
+    --mist-background-secondary
   ); /* Message Hover Background */
   --default-animation: cubic-bezier(0.4, 0, 0.2, 1);
   --default-time: 250ms;
@@ -1224,7 +1230,7 @@
 
 .messagesWrapper-RpOMA3,
 .scrollerContent-2SW0kQ {
-  background-color: var(--mist-background-primary);
+  background-color: var(--mist-background-primary-alt);
   padding-bottom: 1.5rem;
 }
 
@@ -1260,7 +1266,7 @@
 .scrollableContainer-15eg7h {
   padding: 1.16rem;
   border-radius: 0;
-  background-color: var(--mist-background-primary-alt);
+  background-color: var(--mist-background-secondary-alt);
 }
 .placeholder-1rCBhr,
 .editor-H2NA06 {
@@ -1347,7 +1353,7 @@
   padding-bottom: 2rem;
 }
 
-.bd-button {
+.bd-addon-controls .bd-button {
   background-color: var(--mist-background-secondary);
   padding: 0.5rem !important;
   border-radius: 50% !important;
@@ -1359,6 +1365,16 @@
 
 .bd-links {
   gap: 1rem;
+}
+
+.bd-controls > .bd-addon-button {
+  padding: 6px;
+  border-radius: 50% !important;
+}
+
+.bd-controls,
+.bd-controls-advanced {
+  gap: 0.5rem;
 }
 
 .bd-button-danger {
@@ -1519,13 +1535,47 @@
   );
 }
 
+/* *txt File */
+
+.textContainer-36wgKK {
+  border: none;
+  background-color: var(--mist-background-primary);
+}
+
+.hljs {
+  background-color: var(--mist-background-primary);
+}
+
+.footer-GXWBBp {
+  background-color: var(--mist-background-secondary-alt);
+  border: none;
+}
+
+.newMosaicStyle-2jdUaP .footer-GXWBBp {
+  padding: 2rem !important;
+}
+
+.downloadButton-2PkwZg,
+.codeIcon-Ni8XUA {
+  padding-left: 1rem;
+}
+
+/* *Command Panel */
+
+.outerWrapper-3UdjNj {
+  bottom: 82px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 /* !TAGS */
 .contents-2MsGLg
   > .avatar-2e8lTP[src*="446890783748915210"]
   ~ h3
   .username-h_Y3Us::after,
 .titleWrapper-24Kyzc > .title-17SveM > div[aria-label="mist#3554"]::after,
-.link-39sEB3[data-list-item-id="private-channels-uid_23___558942047839453184"]
+.link-39sEB3[data-list-item-id="private-channels-uid_5580___558942047839453184"]
   .name-2m3Cms::after,
 .layer-2BGhQ8 div[aria-label="mistartworks"] .nickname-3P1RuO::after {
   content: "Dev";
